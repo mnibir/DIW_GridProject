@@ -1,0 +1,181 @@
+
+/*Todos los elementos*/
+*{
+	margin: 0px; padding: 0px;
+	box-sizing: border-box;
+	font-family: times;
+}
+html, body {
+	height: 110vh;
+}
+/*Enlaces*/
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: #1b2631;
+}
+a:hover{
+	color: #1f618d;
+	text-shadow: 1px 1px 2px white;
+}
+
+
+/*BODY*/
+body{ font-size: 1.1em; }
+
+
+/*HEADER*/
+header{	text-align: center; }
+#logo a{
+	font-style: italic;
+	color: white;
+	text-shadow: 1px 1px 5px black, 0 0 5px darkblue;
+	background-color: white;	 
+	border-radius: 10px;	
+}
+
+
+/*MAIN*/
+/*Botones*/
+main a,input[type=submit]{
+    border: 3px solid #1f618d;
+	border-radius: 15px;
+	background-color: lightgray;
+	padding: 10px;
+	text-align: center;
+}
+main a:hover,input[type=submit]:hover{
+	background-color: gray;
+}
+
+/*Banner*/
+#banner{
+	background: url("../img/smartphone-1445489_1920.jpg") center no-repeat;
+	background-size: cover;
+	height: 75vh;
+}
+
+/*index.html*/
+/*#contenedorIndice{ height: 50vh; }*/
+#contenedorIndice *{ margin: 5px; padding: 5px; }
+
+/*professionalInscription.html*/
+#contenedorInscripcion{
+	text-align: center;
+	padding-top: 15px; 
+	padding-bottom: 15px; 
+}
+
+/*professionalFields.html*/
+#contenedorProfesiones a{ display: block; margin: 5px; }
+
+/*professionalField_??.html*/
+#formularioFiltro{ padding: 15px;}
+.contenedorProfesional{ 
+	border: 3px solid #1f618d;
+	border-radius: 15px;
+	background-color: lightgray;
+	margin: 15px; padding: 15px;
+}
+.imagenProfesional{ width: 75%; height: auto;	border-radius: 15px; }
+.ofertaProfesional{ padding-top: 5px; font-weight: bold; }
+.perfilProfesional{ text-align: center; padding-top: 5px; }
+
+
+/*ASIDE*/
+aside{ background-color: darkgray;	padding: 20px 0; }
+.menuPie{ text-align: center; padding: 10px;}
+
+
+/*FOOTER*/
+footer{
+	background-color: darkgray;
+	text-align: left;
+	padding: 2%;
+	height: 20vh; 
+	margin-bottom: 0px;
+	line-height: 20vh;
+}
+
+
+/*FORMULARIOS*/
+form{
+	display: inline-block;
+	text-align: left;
+	border: 3px solid #1f618d;
+	border-radius: 15px;
+	background-color: lightgray;
+	padding: 20px;
+}
+form *:not(label,p){ background-color: white; border-radius: 2px; }
+input[type=checkbox]{ transform: scale(1.5); }
+
+
+/*RESPONSIVE*/
+@media (min-width: 900px){
+	/*BODY*/
+	body{ font-size: 1.2em; }
+
+	/*MAIN*/
+	/*index.html*/
+	#contenedorIndice{
+		display: grid;
+		grid-template-columns: repeat(7,calc(100%/7));
+		grid-template-rows: repeat(3,calc(50vh/3)); 
+	}
+	.botonIndice:nth-child(1){ grid-area: 2/2/3/4; }
+	.botonIndice:nth-child(2){ grid-area: 2/5/3/7; }
+
+	/*professionalFields.html*/
+	#contenedorProfesiones{
+		display: grid;
+		grid-template-columns: 5px 1fr 5px 1fr 5px 1fr 5px;
+		grid-template-rows: 5px 1fr 5px 1fr 5px 1fr 5px; 
+	}
+	.botonProfesion:nth-child(1){ grid-row-start: 2; grid-column-start: 2; }
+	.botonProfesion:nth-child(2){ grid-row-start: 2; grid-column-start: 4; }
+	.botonProfesion:nth-child(3){ grid-row-start: 2; grid-column-start: 6; }
+	.botonProfesion:nth-child(4){ grid-row-start: 4; grid-column-start: 2; }
+	.botonProfesion:nth-child(5){ grid-row-start: 4; grid-column-start: 4; }
+	.botonProfesion:nth-child(6){ grid-row-start: 4; grid-column-start: 6; }
+	.botonProfesion:nth-child(7){ grid-row-start: 6; grid-column-start: 2; }
+	.botonProfesion:nth-child(8){ grid-row-start: 6; grid-column-start: 4; }
+	.botonProfesion:nth-child(9){ grid-row-start: 6; grid-column-start: 6; }
+
+	/*professionalField_??.html*/
+	#contenedorBusqueda{
+		display: grid;
+		grid-template-columns: 1fr 4fr;
+	}
+	#formularioFiltro{ grid-column-start: 1; }
+	#contenedorProfesionales{ 
+		grid-column-start: 2; 
+		display: grid; 
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+	.contenedorProfesional{
+		display: grid;
+		grid-template-columns: repeat(2,calc(100%/2));
+		grid-template-rows: 6fr 1fr;
+	}
+	.contenedorProfesional:nth-child(1){ grid-row-start: 1; }
+	.contenedorProfesional:nth-child(2){ grid-row-start: 2; }
+	.contenedorProfesional:nth-child(3){ grid-row-start: 3; }
+	.imagenProfesional{ grid-column-start: 1; grid-row-start: 1; }
+	.descripcionProfesional{ grid-column-start: 2; grid-row-start: 1; }
+	.ofertaProfesional{ grid-column-start: 1; grid-row-start: 2; }
+	.perfilProfesional{ grid-column-start: 2; grid-row-start: 2; }
+
+
+	/*ASIDE*/
+	aside{
+		display: grid;
+		grid-template-columns: repeat(4,calc(100%/4));
+		grid-template-rows: 1fr;
+	}
+	.menuPie:nth-child(1){ grid-column-start: 1; }
+	.menuPie:nth-child(2){ grid-column-start: 2; }
+	.menuPie:nth-child(3){ grid-column-start: 3; }
+	.menuPie:nth-child(4){ grid-column-start: 4; }
+}
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ProfessionalsWeb</title>
+		<meta charset="utf-8">
+		<meta name="description" content="This is a web site to conect people with professionals.">
+		<meta name="viewport" content=width=device-width, initial-scale=1>
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+
+		<script>
+			function filtrar(){}
+		</script>
+
+	</head>
+	<body>
+		<header>
+				<br/>
+				<h1 id="logo"><a href="../index.html">ProfessionalsWeb</a></h1>						
+				<div>Are you looking for a professional? Are you looking for clients?</div>
+				<br/>
+		</header>
+		<main>		
+			<div id="banner"></div>
+			<div id="contenedorBusqueda">
+				<div id="formularioFiltro" >
+				<form action="" method="post" onsubmit="filtrar()"><br/><br/>
+					<label for="tipo">Select a professional field: </label>
+					<select name="tipo">
+						<option value="professionalField_01.html" selected>APP developers</option>
+						<option value="professionalField_02.html">E-commerce developers</option>
+						<option value="professionalField_03.html">Web page and blog developers</option>
+						<option value="professionalField_04.html">SEO experts</option>
+						<option value="professionalField_05.html">Community manager</option>
+						<option value="professionalField_06.html">Particular teacher</option>
+						<option value="professionalField_07.html">Personal trainer</option>
+						<option value="professionalField_08.html">Professionals of the hotel sector</option>
+						<option value="professionalField_09.html">Others</option>
+					</select><br/><br/>
+					<label for="ambito">Select an area: </label>
+					<select name="ambito">
+						<optgroup label="Online">
+							<option value="online" selected>Online</option>
+						</optgroup>
+						<optgroup label="Face-to-face">
+							<option value="madrid">Madrid</option>
+							<option value="barcelona">Barcelona</option>
+							<option value="palmademallorca">Palma de Mallorca</option>
+						</optgroup>
+					</select><br/><br/>
+					<input type="submit" name="envio" value="FILTER"><br/><br/>
+				</form>
+				</div>
+				<div id="contenedorProfesionales">
+					<!-- Anuncio 1 -->
+					<div class="contenedorProfesional">
+						<img class="imagenProfesional" src="../img/allrounder-1232059_640.jpg">
+
+						<p class="ofertaProfesional">Face-to-face Mathematical classes in Lugo.</p>
+											
+						<p class="descripcionProfesional">I have a Degree in Mathematics. I offer particular classes to students of ESO. Particular or private up to three people classes.<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</span></p>
+																
+						<div class="perfilProfesional"><a href="#">See profile</a></div>
+					</div>						
+					<!-- Anuncio 2 -->
+					<div class="contenedorProfesional">
+						<img class="imagenProfesional" src="../img/mobile-phone-2105780_640.jpg">
+
+						<p class="ofertaProfesional">Face-to-face English classes in Palma.</p>
+								
+						<p class="descripcionProfesional">I am a native speaker offering private English classes in Madrid. I offer also conversation classes and preparation to Cambridge First Certificate, Cambridge Advanced...<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</span></p>
+								
+						<div class="perfilProfesional"><a href="#">See profile</a></div>
+					</div>
+					<!-- Anuncio 3 -->
+					<div class="contenedorProfesional">
+						<img class="imagenProfesional" src="../img/business-woman-2137559_640.jpg">
+						
+						<p class="ofertaProfesional">Online Chemistry classes.</p>
+
+						<p class="descripcionProfesional">I have a Degree in Chemistry. I have been teaching ESO students for 10 years to prepare them to their access to the University.<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</span></p>
+														
+						<div class="perfilProfesional"><a href="#">See profile</a></div>
+					</div>
+				</div>	
+			</div>
+		</main>
+		<aside>
+			<div class="menuPie"><a href="#">About us</a></div>
+			<div class="menuPie"><a href="#">Contact</a></div>
+			<div class="menuPie"><a href="#">Terms</a></div>
+			<div class="menuPie"><a href="#">Advertising</a></div>				
+		</aside>
+		<footer>			
+			<small>&copy 2017 ProfessionalsWeb</small>
+		</footer>
+	</body>
+</html>

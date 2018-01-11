@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ProfessionalsWeb</title>
+		<meta charset="utf-8">
+		<meta name="description" content="This is a web site to conect people with professionals.">
+		<meta name="viewport" content=width=device-width, initial-scale=1>
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+
+		<script type="text/javascript">
+			function informar(){
+				window.alert("Data will be stored in a database.");
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+				<br/>
+				<h1 id="logo"><a href="../index.html">ProfessionalsWeb</a></h1>						
+				<div>Are you looking for a professional? Are you looking for clients?</div>
+				<br/>
+		</header>
+		<nav></nav>
+		<main>		
+			<div id="banner"></div>	
+			<div id="contenedorInscripcion">	
+				<form id="formularioInscripcion" action="" method="post" onsubmit="informar()"><br/><br/>
+					<p>Please, fill in the following form with your personal data.</p><br/><br/>
+					<label for="nombre">First name: </label><input type="text" name="nombre" value="" required /> *<br/><br/>
+					<label for="apellido1">First surname: </label><input type="text" name="apellido1" value="" required /> *<br/><br/>
+					<label for="telefono">Phone number: </label><input type="tel" name="telefono" value="" /><br/><br/>
+					<label for="correo">E-mail: </label><input type="email" name="correo" value="" required /> *<br/><br/>
+					<label for="curriculumvitae">CV: </label><input type="file" name="curriculumvitae" /><br/><br/>
+					<label for="tipo">Select your professional field: </label>
+					<select>
+						<option value="customer1.html" selected>APP developers</option>
+						<option value="customer2.html">E-commerce developers</option>
+						<option value="customer3.html">Web page and blog developers</option>
+						<option value="customer4.html">SEO experts</option>
+						<option value="customer5.html">Community manager</option>
+						<option value="customer6.html">Particular teacher</option>
+						<option value="customer7.html">Personal trainer</option>
+						<option value="customer8.html">Professionals of the hotel sector</option>
+						<option value="customer9.html">Others</option>
+					</select> *<br/><br/>
+					<label for="anuncio">Advertisement: </label><br/><br/>
+					<textarea name="anuncio" cols="25" maxlength="300" required></textarea> *<br/><br/>
+					<label for="posicionamiento">SEO positioning (of payment): </label><input type="checkbox" name="posicionamiento" /> <br/><br/>
+					<input type="submit" name="envio" value="SEND"><br/><br/>
+					<p>Required fields *</p>
+				</form>	
+			</div>
+		</main>
+		<aside>
+			<div class="menuPie"><a href="#">About us</a></div>
+			<div class="menuPie"><a href="#">Contact</a></div>
+			<div class="menuPie"><a href="#">Terms</a></div>
+			<div class="menuPie"><a href="#">Advertising</a></div>				
+		</aside>
+		<footer>			
+			<small>&copy 2017 ProfessionalsWeb</small>
+		</footer>
+	</body>
+</html>
